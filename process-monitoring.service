@@ -1,0 +1,11 @@
+[Unit]
+Description=Monitor process "test"
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/path/to/your/test.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
